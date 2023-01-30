@@ -22,11 +22,13 @@
     "@portabletext/react": "^2.0.1",
     "@sanity/image-url": "^1.0.2",
     "@sanity/vision": "^3.0.0",
+    "@tailwindcss/line-clamp": "^0.4.2",
     "next": "^13.1.6",
     "next-sanity": "^4.1.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sanity": "^3.0.0",
+    "sanity-plugin-iframe-pane": "^2.1.1",
     "styled-components": "^5.2.0"
   },
   "scripts": {
@@ -37,6 +39,7 @@
   "prettier": {
     "singleQuote": true,
     "trailingComma": "es5",
+    "useTabs": false,
     "tabWidth": 2,
     "semi": true,
     "jsxSingleQuote": true,
