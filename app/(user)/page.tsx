@@ -13,6 +13,8 @@ const query = groq`
   } | order(publishedAt desc)
 `;
 
+export const revalidate = 120; //revalidate the page in seconds
+
 export default async function HomePage() {
   if (previewData()) {
     return (
