@@ -2,7 +2,7 @@ import { groq } from 'next-sanity';
 import { client } from '../../../../lib/sanity.client';
 import Image from 'next/image';
 import urlFor from '../../../../lib/urlFor';
-import PortableText from 'react-portable-text';
+import { PortableText } from '@portabletext/react';
 import { RichTextComponents } from '../../../../components/RichTextComponents';
 
 type Props = {
@@ -22,8 +22,6 @@ async function Post({ params: { slug } }: Props) {
   `;
 
   const post: Post = await client.fetch(query, { slug });
-
-  console.log(post);
 
   return (
     <article className='px-10 pb-28'>
