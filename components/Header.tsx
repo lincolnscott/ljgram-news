@@ -19,9 +19,9 @@ function Header() {
 
       <div>
         <Link
-          href='/'
+          href='/studio'
           className='px-5 py-3 text-sm md:text-base bg-gray-900 text-[#fcc40a] flex items-center rounded-full text-center'>
-          Sign Up For Our Newsletter
+          LJgram Studio
         </Link>
       </div>
     </header>
