@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import urlFor from '../lib/urlFor';
+import { PortableText } from '@portabletext/react';
 
 export const RichTextComponents = {
   types: {
