@@ -1,5 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
+import DarkModeToggle from './DarkModeToggle';
 
 function Header() {
   return (
@@ -18,11 +19,7 @@ function Header() {
       </div>
 
       <div>
-        <Link
-          href='/studio'
-          className='px-5 py-3 text-sm md:text-base bg-gray-900 text-[#fcc40a] flex items-center rounded-full text-center'>
-          LJgram Studio
-        </Link>
+        <DarkModeToggle />
       </div>
     </header>
   );

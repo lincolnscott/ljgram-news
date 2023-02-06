@@ -1,3 +1,5 @@
+import DarkModeToggle from './DarkModeToggle';
+
 const isDev: boolean = process.env.NODE_ENV === 'development';
 let devString: string = '';
 if (isDev) {
