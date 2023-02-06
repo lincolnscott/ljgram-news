@@ -8,7 +8,7 @@ function Header() {
       <div className='flex items-center space-x-2'>
         <Link href='/'>
           <Image
-            className='rounded-full'
+            className='rounded-md'
             src='/images/Logo.png'
             width={50}
             height={50}
