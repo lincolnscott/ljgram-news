@@ -40,8 +40,8 @@ async function Post({ params: { slug } }: Props) {
   const post: Post = await client.fetch(query, { slug });
 
   return (
-    <article className='px-10 pb-28'>
-      <section className='space-y-2 border border-[#fcc40a] text-white'>
+    <article className='bg-gray px-10 pb-28'>
+      <section className='space-y-2 border-text border-8 rounded-2xl text-text'>
         <div className='relative min-h-54 flex flex-col md:flex-row justify-between'>
           <div className='absolute top-0 w-full h-full opacity-10 blur-sm p-10'>
             {/* MAIN IMAGE AND AUTHOR NAME */}
@@ -53,13 +53,13 @@ async function Post({ params: { slug } }: Props) {
             />
           </div>
           {/* STUFF IN BRAND COLOR IMAGE */}
-          <section className='p-5 bg-[#fcc40a] w-full'>
+          <section className='p-5 bg-cyan-50 w-full'>
             <div className='flex flex-col md:flex-row justify-between gap-y-5'>
               <div>
                 {/* POST TITLE */}
                 <h1 className='text-4xl font-extrabold'>{post.title}</h1>
 
-                <p>
+                <p className='text-text'>
                   {new Date(post._createdAt).toLocaleDateString('en-US', {
                     day: 'numeric',
                     month: 'long',
@@ -80,7 +80,9 @@ async function Post({ params: { slug } }: Props) {
 
                 {/* AUTHOR INFO */}
                 <div className='w-64'>
-                  <h3 className='text-lg font-bold'>{post.author.name}</h3>
+                  <h3 className='text-lg font-bold text-text'>
+                    {post.author.name}
+                  </h3>
                   <div>{/* TODO: Author BIO */}</div>
                 </div>
               </div>
@@ -88,12 +90,12 @@ async function Post({ params: { slug } }: Props) {
 
             {/* POST DESCRIPTION */}
             <div>
-              <h2 className='italic pt-10'>{post.description}</h2>
+              <h2 className='italic pt-10 text-text'>{post.description}</h2>
               <div className='flex items-center justify-end mt-auto space-x-2'>
                 {post.categories.map((category) => (
                   <p
                     key={category._id}
-                    className='bg-gray-800 text-white px-10 py-1 rounded-full text-sm font-semibold mt-4'>
+                    className='bg-gray-800 text-text px-10 py-1 rounded-full text-sm font-semibold mt-4'>
                     {category.title}
                   </p>
                 ))}

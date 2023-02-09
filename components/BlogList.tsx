@@ -9,8 +9,8 @@ type Props = {
 
 function BlogList({ posts }: Props) {
   return (
-    <div>
-      <hr className='border-[#fcc40a] mb-10' />
+    <div className='bg-gray'>
+      <hr className='border-LJ pb-10 ' />
       <div>
         <Blogs posts={posts} />
       </div>

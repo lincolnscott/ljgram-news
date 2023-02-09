@@ -4,7 +4,7 @@ import DarkModeToggle from './DarkModeToggle';
 
 function Header() {
   return (
-    <header className='flex items-center justify-between space-x-2 font-bold px-10 py-5'>
+    <header className='bg-gray text-text flex items-center justify-between space-x-2 font-bold px-10 py-5'>
       <div className='flex items-center space-x-2'>
         <Link href='/'>
           <Image

@@ -3,7 +3,7 @@ function Logo(props: any) {
   const { renderDefault, title } = props;
 
   return (
-    <div className='flex items-center space-x-2'>
+    <div className='bg-gray flex items-center space-x-2'>
       <Image
         className='rounded-full object-cover'
         width={50}
