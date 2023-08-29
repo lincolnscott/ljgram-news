@@ -31,7 +31,8 @@
     "react-portable-text": "^0.6.0",
     "sanity": "^3.2.6",
     "sanity-plugin-iframe-pane": "^2.1.1",
-    "styled-components": "^5.2.0"
+    "styled-components": "^5.2.0",
+    "vercel": "^32.1.0"
   },
   "scripts": {
     "dev": "next dev",
